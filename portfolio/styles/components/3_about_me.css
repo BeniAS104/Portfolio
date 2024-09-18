@@ -1,0 +1,139 @@
+
+.about_me {
+    color: var(--clr-light);
+    
+}
+.about_me h2 {
+    font-size: var(--size-3xl);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.about_me-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.about_me-wrapper p {
+    padding: 0.5em 0;
+}
+.about_me-wrapper img {
+    width: 14rem;
+    height: 14rem;
+    outline: 3px solid var(--clr-blue);
+    border-radius: 10px;
+    margin: 0 auto 1.5rem;
+}
+hr.separator {
+    margin: 0.75rem auto;
+    border: 1px solid var(--clr-orange);
+    
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+
+    .about_me {
+        color: var(--clr-light);
+        
+    }
+    .about_me h2 {
+        font-size: var(--size-3xl);
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .about_me-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        gap: 2.5rem;
+    }
+    .about_me-wrapper p {
+        padding: 0.4em 0;
+        width: 40ch;
+    }
+    .about_me-wrapper img {
+        width: 20rem;
+        height: 20rem;
+        outline: 3px solid var(--clr-blue);
+        border-radius: 15px;
+        margin: unset;
+    }
+    hr.separator {
+        width: 97%;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+        margin-inline: unset;
+        border: 1px solid var(--clr-blue);
+        
+    }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+    .about_me {
+        color: var(--clr-light);
+        
+    }
+    .about_me h2 {
+        font-size: var(--size-3xl);
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .about_me-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        gap: 3.75rem;
+    }
+    .about_me-wrapper p {
+        padding: 0.4em 0;
+        width: 40ch;
+    }
+    .about_me-wrapper img {
+        width: 23.5rem;
+        height: 23.5rem;
+        border: 3px solid var(--clr-blue);
+        outline: unset;
+        border-radius: 15px;
+        margin: unset;
+    }
+    
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+@media (min-width: 1536px) {
+
+    .about_me-wrapper img {
+        width: 26.5rem;
+        height: 26.5rem;
+        border: 3px solid var(--clr-blue);
+        outline: unset;
+        border-radius: 15px;
+        margin: unset;
+    }
+    .about_me-wrapper p {
+        padding: 0.4em 0;
+        width: 50ch;
+    }
+
+
+
+}

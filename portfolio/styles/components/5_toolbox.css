@@ -1,0 +1,123 @@
+.toolbox.container {
+    color: var(--clr-light);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-inline: auto;
+    
+}
+.toolbox h2 {
+    font-size: var(--size-3xl);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+
+.toolbox_wrapper {
+    width: 100%;
+    
+    margin-inline: auto;
+    position: relative;
+    height: 150px;
+    margin-top: 1rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  .tool img {
+    width: 85px;
+    height: 85px;
+  }
+  .tool:first-of-type img {
+    aspect-ratio: 0.89;
+  }
+  .tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 10), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 27s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+  
+  .tool1 {
+    animation-delay: calc(27s / 10 * (10 - 1) * -1);
+  }
+  
+  .tool2 {
+    animation-delay: calc(27s / 10 * (10 - 2) * -1);
+  }
+  
+  .tool3 {
+    animation-delay: calc(27s / 10 * (10 - 3) * -1);
+  }
+  
+  .tool4 {
+    animation-delay: calc(27s / 10 * (10 - 4) * -1);
+  }
+  
+  .tool5 {
+    animation-delay: calc(27s / 10 * (10 - 5) * -1);
+  }
+  
+  .tool6 {
+    animation-delay: calc(27s / 10 * (10 - 6) * -1);
+  }
+  
+  .tool7 {
+    animation-delay: calc(27s / 10 * (10 - 7) * -1);
+  }
+  
+  .tool8 {
+    animation-delay: calc(27s / 10 * (10 - 8) * -1);
+  }
+  .tool9 {
+    animation-delay: calc(27s / 10 * (10 - 9) * -1);
+  }
+  .tool10 {
+    animation-delay: calc(27s / 10 * (10 - 10) * -1);
+  }
+
+  /* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .toolbox.container {
+    
+    width: 70%;
+}
+
+}

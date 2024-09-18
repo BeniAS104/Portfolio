@@ -1,0 +1,277 @@
+.sources {
+    color: var(--clr-light);
+}
+.sources h2 {
+        font-size: var(--size-3xl);
+        text-align: center;
+        margin-inline: auto;
+        margin-bottom: 3rem;
+        
+
+}
+.sources__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-inline:auto;
+    gap: 2rem;
+    
+}
+
+.sources_info p {
+  max-width: 50ch;
+  padding: 0.5em 0;
+}
+/* ................................... SPINNER CODE........................... */
+
+
+
+  .spin_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  }
+
+  .flex {
+    position: relative;
+    display: grid;
+    place-content: center;
+    width: 300px;
+    height: 300px;
+    animation: planetRotate 30s linear infinite;
+    z-index: 5;
+    overflow: hidden;
+  }
+
+  @keyframes planetRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .flex span a img:hover {
+    scale: 1.05;
+  }
+
+  .centered-odin {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 6;
+    
+  }
+
+  .centered-odin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition:  0.3s;
+
+  }
+  .centered-odin img:hover {
+    scale: 1.05;
+  }
+
+  .flex span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(120deg * var(--i)));
+    pointer-events: none;
+  }
+  .w3schools img {
+    rotate: 120deg;
+  }
+  .mdn img {
+    rotate: 240deg;
+  }
+  
+  .flex span a img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    outline: 3px solid var(--clr-light);
+    object-fit: cover;
+    object-position: center;
+    animation: stayUpright 30s linear infinite;
+    pointer-events: auto;
+    transition: hover 0.3s;
+  }
+
+  /* Keep images upright while rotating */
+  @keyframes stayUpright {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .bg, .spin_span {
+    pointer-events: auto; /* Make sure hover works on the parent elements */
+  }
+  .bg {
+    width: 75px;
+    height: 75px;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    transform: translateX(25%);
+    border: 2px solid var(--clr-orange);
+  }
+
+ 
+  
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .sources__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-inline:auto;
+    gap: 2rem;
+    
+}
+.bg {
+  width: 85px;
+  height: 85px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  transform: translateX(20%);
+  border: 2px solid var(--clr-orange);
+}
+
+.flex span a img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  outline: 3px solid var(--clr-light);
+  object-fit: cover;
+  object-position: center;
+  animation: stayUpright 30s linear infinite;
+  pointer-events: auto;
+  transition: 0.3s;
+}
+.sources_info {
+  order: 1;
+}
+.spin_container {
+  order: 2;
+}
+.sources_info p {
+  max-width: unset;
+  padding: 0.5em 0;
+  width: 40ch ;
+}
+
+.sources h2 {
+  font-size: var(--size-3xl);
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+  max-width: none;
+
+}
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+  .sources__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-inline:auto;
+    gap: 3.75rem;
+    
+}
+
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .sources__wrapper { 
+    gap:6.5rem;
+  }
+  .centered-odin {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 6;
+    
+  }
+
+  .bg {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7%;
+    transform: translateX(7%);
+    
+  }
+  
+  .flex span a img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    outline: 3px solid var(--clr-light);
+    object-fit: cover;
+    object-position: center;
+    animation: stayUpright 30s linear infinite;
+    pointer-events: auto;
+    transition: 0.3s;
+  }
+  .flex {
+    overflow:visible;
+}
+}
+/* 2xl */
+@media (min-width: 1536px) {
+
+  .sources_info p {
+    max-width: unset;
+    padding: 0.5em 0;
+    width: 50ch ;
+  }
+  .sources__wrapper {
+    gap: 8rem;
+}
+}

@@ -1,0 +1,113 @@
+.contact.container {
+    color: var(--clr-light);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-inline: auto;
+    
+    
+}
+.contact h2 {
+    font-size: var(--size-3xl);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-wrapper .contact-info {
+    max-width: 55ch;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+}
+.triplets {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin:0 auto 2rem;
+    width: fit-content;
+}
+.triplet a{
+    display: flex;
+    gap: 1em;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-underline-offset: 1.5px;
+    color: var(--clr-light);
+    transition: 0.3s;
+}
+.triplet a:hover{
+    scale: 1.05;
+    color: var(--clr-orange);
+}
+.triplet svg {
+    width: 40px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {
+  
+    
+} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .triplet p {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SECTION */
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--clr-light);
+    margin-top: auto;
+    margin-bottom: 0.5em;
+    font-size: 0.9rem;
+}

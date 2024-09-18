@@ -1,0 +1,132 @@
+:root {
+  /* colors */
+  --clr-dark: #11112A;
+  --clr-black: #141414;
+  --clr-light: #f1f5f9;
+  --clr-blue: #3273FA;
+  --clr-lightblue: #25254B;
+  --clr-darkblue: #0F0F38;
+  --clr-orange: #FF9B00;
+  
+
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+.light-mode {
+  --clr-light: #070a13;
+  --clr-dark: #dae6ffc7;
+  --clr-darkblue: #f1f5f9;
+  --clr-lightblue: #a8c3ffc7;
+}
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--clr-darkblue);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+
+.circle {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .circle {
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 24px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; 
+  }
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 100px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    z-index: 1;
+}
+body.light-mode .glass {
+  background: linear-gradient(135deg, rgba(133, 133, 133, 0.15), rgba(0, 0, 0, 0));
+  border-color: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-blue); /* Color of the scrollbar handle */
+  border-radius:20px; /* Rounded corners for the handle */
+  
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: var(--clr-darkblue); /* Background color of the scrollbar track */
+  border-radius: 6px; /* Rounded corners for the track */
+  
+}
+
+:focus {
+  outline: none; /* Remove default outline */
+}
+
+:focus-visible {
+  outline: 2px solid rgb(25, 204, 19) !important;
+  outline-offset: 2px !important;
+}
